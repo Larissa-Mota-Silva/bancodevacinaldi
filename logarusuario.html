@@ -1,0 +1,47 @@
+<!-- HTML da página de logar usuário, tambem tem o link para cadastrar usuário e alterar usuário -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logar usuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container-login">
+        <div id="login">
+            <form action="mainusuario.php" method = "post">
+                <div>
+                    <img src="imagens/logo.png">
+                 </div>
+                 <span id="linha"></span>
+                <h1>Logar usuario</h1>
+                <br/> <br/>
+                <p> Digite o login:</p>
+                <input type="text" name="login" size="15" placeholder="Digite seu login"/>
+                <br/> <br/>
+                <p>Digite a senha:</p>
+                <input type="text" name="senha" size="15" placeholder="Digite sua senha"/>
+                <br/> <br/>
+                <br/> <br/>
+                <input type="submit" name=acao7 value ="Logar" />
+                <br><br>
+            </form>
+            <form>
+                <p>Deseja alterar um usuário?</p>
+                <a href="alterarusuario.html" target="_blank">
+                <input type="button" value="Alterar">
+                </a>
+            </form>
+                <br>
+                <p>Ainda não possui cadastro?</p> 
+            <form>
+                <a href="cadastrarusuario.html" target="_blank">
+                <input type="button" value="Cadastre-se">
+                </a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

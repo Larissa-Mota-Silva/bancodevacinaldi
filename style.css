@@ -1,0 +1,229 @@
+/*-------- Zerando a formatação das páginas --------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria;
+}
+
+/*-------- Formatações para todas as páginas --------*/
+
+h2{
+    min-width: 30vw;
+    margin: 10px 5px;
+    font-style: italic;
+    background-color: #4895D9;
+    color: #043087;
+    border-radius: 40px;
+    padding: 0px 10px;
+    font-style: italic;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: #043087;
+}
+
+nav{
+  text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: #000000;
+	padding: 5px;
+  	margin: 10px 0px;
+    font-size: 18px;
+}
+
+a:hover{
+	color: #4879D9;
+}
+
+a:active{
+	color: #96a8dd;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #DCE9F0;
+    padding: 20px 0px;
+}
+
+
+footer{
+	clear: both;
+	text-align: center;
+	background-color: #A3CAE1;
+	color: #0539A1;
+	height: 6vh;
+}
+
+
+/*-------- Formatação do cabeçalho --------*/
+
+header{
+    height: 13vh;
+    background: #A3CAE1;
+}
+
+header img{
+    transform: translateY(70%);
+    height: 5vh;
+    float: left;
+}
+
+/*-------- Formatação dos links do index --------*/
+
+.links{
+    margin: 0px 20px;
+    display: inline-block;
+}
+
+/*-------- Formatação Index, section com os links do lado direito --------*/
+
+.direita-img{
+    flex-basis: 50%;
+}
+
+.direita-img img{
+    width: 100%;
+}
+
+.direita-links{
+    flex-basis: 50%;
+    text-align: right;
+}
+
+/*-------- Formatação index, section com os links do lado esquerdo --------*/
+
+.esquerda-img{
+    flex-basis: 50%;
+}
+
+.esquerda-img img{
+    width: 100%;
+}
+
+.esquerda-links{
+    flex-basis: 50%;
+    text-align: left;
+}
+
+/*-------- Formatação das páginas de formulário --------*/
+
+.container-formulario{
+    height: 100vh;
+    background-color: #DCE9F0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulario{
+    width: auto;
+    height: auto;
+    background-image: linear-gradient(180deg, #ced8df,#67acda);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, .232);
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/*-------- Formatação dos botões --------*/
+
+input[type=button]{
+	width: auto;
+    font-size: 15px;
+    padding: 5px;
+    background: transparent;
+    border: none;
+    color: #043087;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type=button]:hover{
+	background-color: #60A6E1;
+	color: #DCE9F0;
+}
+
+input[type=text]{
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+    padding: 3px;
+	background-color: #CEDEF2;
+    align-items: center;
+}
+
+input[type=submit]{
+	width: auto;
+    font-size: 18px;
+	background-color: #0048A6;
+	color: #F6F6F6;
+	padding: 4px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover{
+	background-color: #4697cc;
+	color: #000000;
+}
+
+#logar input[type=button]{
+    float: right;
+    position: relative;
+    transform: translateY(100%) translateX(-20%);
+}
+
+/*-------- Formatação da página de login --------*/
+
+#container-login{
+    width: 100vw;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #A3CAE1;
+}
+
+#container-login #login{
+    max-width: 90vw;
+    height: auto;
+    display: flex;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, .232);
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, #ced8df,#67acda);
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#container-login #login img{
+	max-height: 9vh;
+	width: auto;
+	background: none;
+}
+
+#container-login #login h1{
+	color: #02559e;
+}
+
+#container-login #linha{
+    width: 40vw;
+    height: 1vh;
+    background: #02559e;
+    display: inline-block;
+    margin-bottom: 10px;
+}
